@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى لطوفة 🎀</title>
+    <style>
+        body { background-color: #ffeef2; font-family: 'Arial', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; overflow-x: hidden; }
+        .container { background: white; padding: 25px; border-radius: 30px; box-shadow: 0 10px 25px rgba(255, 77, 109, 0.2); direction: rtl; text-align: center; width: 320px; position: relative; z-index: 10; margin: 20px; min-height: 450px; }
+        .kitty-img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto; border-radius: 15px; }
+        h1 { color: #ff4d6d; font-size: 18px; line-height: 1.6; margin: 10px 0; min-height: 50px; }
+        .main-btn { background: #ff4d6d; color: white; border: none; padding: 12px 20px; border-radius: 50px; cursor: pointer; margin: 8px; font-size: 15px; font-weight: bold; }
+        .no-btn { background: #888; color: white; border: none; padding: 10px 18px; border-radius: 50px; position: fixed; transition: 0.1s ease; cursor: pointer; z-index: 1000; left: 50%; transform: translateX(-50%); }
+        .personal-message { margin-top: 15px; border-top: 2px dashed #ffcad4; padding-top: 10px; font-size: 15px; color: #444; line-height: 1.8; text-align: right; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="mainContainer">
+    <!-- المرحلة 1 -->
+    <div id="step1">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>هلووو لطوفة! 🎀</h1>
+        <button class="main-btn" onclick="showStep(2)">أهلاً هيلو كيتي ✨</button>
+    </div>
+
+    <!-- المرحلة 2 -->
+    <div id="step2" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3p1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>كنت قاعدة بفكر فيكي وبقول يا ترى شو بتعمل هسا؟ ✨</h1>
+        <button class="main-btn" onclick="showStep(3)">كنت بفكر فيكِ كمان!</button>
+    </div>
+
+    <!-- المرحلة 3 -->
+    <div id="step3" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>جد؟ طيب عندي إلك سر خطير ما بيعرفه غيري.. 🤫</h1>
+        <button class="main-btn" onclick="showStep(4)">شو هو؟ قوليلي!</button>
+    </div>
+
+    <!-- المرحلة 4 -->
+    <div id="step4" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>السر بخص واحد اسمه "إيهاب".. بتعرفيه؟ 🧸</h1>
+        <button class="main-btn" onclick="showStep(5)">أكيد بعرفه ❤️</button>
+    </div>
+
+    <!-- المرحلة 5 -->
+    <div id="step5" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3p1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>بتعرفي إنه هاد الشخص ما بيمر يوم إلا وذكر اسمك فيه؟ 🗣️</h1>
+        <button class="main-btn" onclick="showStep(6)">والله؟ شو بيحكي؟</button>
+    </div>
+
+    <!-- المرحلة 6 -->
+    <div id="step6" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>بيقول إنك "القطعة الناقصة" اللي كملت حياته.. ✨</h1>
+        <button class="main-btn" onclick="showStep(7)">يا روحي.. وبعدين؟</button>
+    </div>
+
+    <!-- المرحلة 7 -->
+    <div id="step7" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3p1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>وبيقول كمان إنك "أغلى" هدية من ربنا إله.. 🍀</h1>
+        <button class="main-btn" onclick="showStep(8)">الحمد لله على وجوده</button>
+    </div>
+
+    <!-- المرحلة 8 -->
+    <div id="step8" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>طيب سؤال.. أنتِ بتعرفي قديش هو بيخاف عليكي؟ 🛡️</h1>
+        <button class="main-btn" onclick="showStep(9)">أيوة بعرف</button>
+    </div>
+
+    <!-- المرحلة 9 -->
+    <div id="step9" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>وقديش هو مستعد يعمل المستحيل بس عشان يشوف ضحكتك؟ 😊</h1>
+        <button class="main-btn" onclick="showStep(10)">الله يخليلي إياه</button>
+    </div>
+
+    <!-- المرحلة 10 -->
+    <div id="step10" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>طيب بدك تعرفي شو أكبر أمنية عنده هسا؟ 🧞‍♂️</h1>
+        <button class="main-btn" onclick="showStep(11)">أكيد، قوليلي</button>
+    </div>
+
+    <!-- المرحلة 11 -->
+    <div id="step11" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3p1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>أمنيته إنك تضلي بقلبه ومعاه لآخر يوم بالعمر.. ❤️</h1>
+        <button class="main-btn" onclick="showStep(12)">وأنا كمان هي أمنيتي</button>
+    </div>
+
+    <!-- المرحلة 12 (الفخ) -->
+    <div id="step12" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1>بتحبي إيهاب وبدك تضلي معاه للأبد؟ 💍</h1>
+        <div style="height: 100px;">
+            <button id="yesBtn" class="main-btn" onclick="showStep(13)">أكيد للأبد! ❤️</button>
+            <button id="noBtn" class="no-btn" onmouseover="moveButton()">لأ 🌚</button>
+        </div>
+    </div>
+
+    <!-- المرحلة 13 (النهاية) -->
+    <div id="step13" style="display:none;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnp1eHptZXRidXJ6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6Z3h6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZNo&rid=giphy.gif" class="kitty-img">
+        <h1 style="color: #ff4d6d;">يا بخت إيهاب فيكي يا لطوفة! ❤️</h1>
+        <div class="personal-message">
+            <p>لطوفة.. أنتِ مو بس حبيبتي، أنتِ "الوطن" اللي هربت له من تعب الدنيا، أنتِ الدعوة اللي استجابها ربنا لي وجمّلت حياتي.</p>
+            <p>بوعدك قدام الله إني أكون لك السند اللي ما بيميل، والحضن اللي بيحتويكي بكل حالاتك. قلبي ما اختار غيرك، وعيوني ما بتشوف غيرك شريكة لعمر الجاي كله.</p>
+            <p>بحبك فوق ما تتخيلي، والله يجمعني فيكي بالحلال وببيت واحد بأقرب وقت.. يا أغلى ما أملك.</p>
+            <p style="text-align: center; font-weight: bold; font-size: 18px;">- إيهاب المحب للأبد ❤️</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showStep(n) {
+        document.querySelectorAll('[id^="step"]').forEach(s => s.style.display = 'none');
+        document.getElementById('step' + n).style.display = 'block';
+        if(n === 13) { 
+            document.getElementById('noBtn').style.display = 'none'; 
+        }
+    }
+
+    function moveButton() {
+        const btn = document.getElementById('noBtn');
+        const maxX = window.innerWidth - btn.clientWidth - 30;
+        const maxY = window.innerHeight - btn.clientHeight - 30;
+        
+        btn.style.left = Math.floor(Math.random() * maxX) + 'px';
+        btn.style.top = Math.floor(Math.random() * maxY) + 'px';
+        btn.style.transform = 'none'; // عشان يتحرك بحرية تامة
+    }
+</script>
+
+</body>
+</html>
